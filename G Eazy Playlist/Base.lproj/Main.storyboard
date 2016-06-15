@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ErJ-h1-Yoc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--G Eazy Discography-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlaylistViewController" customModule="G_Eazy_Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fuN-vF-kzr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aN5-cN-d05">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Nz5-Ex-0sz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbC-nc-bzr">
+                                            <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="yHR-Rm-Te5">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="918-aK-5UV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="My Favorite" image="Favourites"/>
+                                                        <connections>
+                                                            <segue destination="7yf-M3-ft0" kind="show" identifier="My Favorites" id="XQC-mW-kpn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1xh-Fi-bUO">
+                                            <rect key="frame" x="11" y="116" width="298" height="400"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="n2u-YH-d2I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="ztV-59-usg" appends="YES" id="b5d-4d-n5L"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-O7-rCh">
+                                                    <rect key="frame" x="102" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="5nS-4S-Drv" appends="YES" id="B9H-NQ-OWY"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="XdI-zq-ZHA">
+                                                    <rect key="frame" x="204" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="CxG-Cy-Qay" appends="YES" id="Lid-mH-Rfa"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="Zgd-Q6-W7r">
+                                                    <rect key="frame" x="0.0" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="JZQ-JP-rqS" appends="YES" id="Wjg-ee-fbM"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="cbb-yK-ZiA">
+                                                    <rect key="frame" x="102" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="k6E-FM-CFi" appends="YES" id="coB-jN-f2j"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="jx8-yc-7gl">
+                                                    <rect key="frame" x="204" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="dre-IE-Me5" appends="YES" id="XiE-2T-nBE"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="ueP-0I-KXe">
+                                                    <rect key="frame" x="0.0" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="47A-Mb-1Mq" appends="YES" id="4oW-Li-gRb"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="ozb-re-Bso">
+                                                    <rect key="frame" x="102" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Q39-Ac-SRq" appends="YES" id="bsp-Ca-Zs6"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="beW-Qv-96O">
+                                                    <rect key="frame" x="204" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="BeH-d2-g6p" appends="YES" id="rP7-T0-xZ8"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="MNg-Wy-LYo">
+                                                    <rect key="frame" x="0.0" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="HXY-fZ-iHf" appends="YES" id="QXf-S2-U4v"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="The Endless Summer" translatesAutoresizingMaskIntoConstraints="NO" id="jio-CV-QiX">
+                                                    <rect key="frame" x="102" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="WlN-o6-eIh" appends="YES" id="h3k-Cr-ttf"/>
+                                                    </connections>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G Eazy's Albums and Mixtapes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGp-6t-3MD">
+                                            <rect key="frame" x="42" y="77" width="237" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="G Eazy Discography" id="lV9-5l-roT"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="coverImage0" destination="n2u-YH-d2I" id="B6G-cw-t9R"/>
+                        <outlet property="coverImage1" destination="Hgf-O7-rCh" id="tOC-25-8q6"/>
+                        <outlet property="coverImage10" destination="jio-CV-QiX" id="ByY-AA-aid"/>
+                        <outlet property="coverImage2" destination="XdI-zq-ZHA" id="2iD-b8-E5q"/>
+                        <outlet property="coverImage3" destination="Zgd-Q6-W7r" id="SFc-tX-041"/>
+                        <outlet property="coverImage4" destination="cbb-yK-ZiA" id="dSZ-YD-adK"/>
+                        <outlet property="coverImage5" destination="jx8-yc-7gl" id="7jB-14-uyj"/>
+                        <outlet property="coverImage6" destination="ueP-0I-KXe" id="IRU-9Z-j3b"/>
+                        <outlet property="coverImage7" destination="ozb-re-Bso" id="chp-pH-GQb"/>
+                        <outlet property="coverImage8" destination="beW-Qv-96O" id="ZTG-aI-F3s"/>
+                        <outlet property="coverImage9" destination="MNg-Wy-LYo" id="SKb-25-c1n"/>
+                        <segue destination="7yf-M3-ft0" kind="show" identifier="Show Album" id="xw5-Rd-JCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ztV-59-usg">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="fpx-u2-eh6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5nS-4S-Drv">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="0Je-8k-7Fx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CxG-Cy-Qay">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="AZH-gQ-3oA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JZQ-JP-rqS">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="MX4-0t-bWe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="k6E-FM-CFi">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="qPd-b8-hWd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dre-IE-Me5">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="No1-jE-0fg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="47A-Mb-1Mq">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="drw-ZJ-e83"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Q39-Ac-SRq">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="Kd1-X2-PEt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BeH-d2-g6p">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="xd5-Ng-hq2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="HXY-fZ-iHf">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="ljG-RX-8JA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="WlN-o6-eIh">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="g1l-0r-fcx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="689" y="324"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="3Sw-tn-NVl">
+            <objects>
+                <viewController id="7yf-M3-ft0" customClass="AlbumViewController" customModule="G_Eazy_Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="So0-Wm-pKz"/>
+                        <viewControllerLayoutGuide type="bottom" id="97Z-rE-DBs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3hP-hF-4f8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="These Things Happen" translatesAutoresizingMaskIntoConstraints="NO" id="nKs-aR-jbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oba-vf-Grj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="Yei-go-8LD">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="These Things Happen" translatesAutoresizingMaskIntoConstraints="NO" id="6rk-zm-rPU">
+                                            <rect key="frame" x="0.0" y="64" width="320" height="320"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FTH-Qt-Myp">
+                                            <rect key="frame" x="8" y="392" width="304" height="168"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mV7-oT-Ziy"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="albumCoverImageView" destination="6rk-zm-rPU" id="nfr-5g-5yy"/>
+                        <outlet property="backgroundImageView" destination="nKs-aR-jbQ" id="a0t-dA-hfu"/>
+                        <outlet property="descriptionTextView" destination="FTH-Qt-Myp" id="Zr2-qo-IQd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5HA-Rl-APS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IBt-Jf-BMV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ErJ-h1-Yoc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R2H-pO-rh0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.29803921568627451" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uGi-ae-ldC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77v-Ey-NPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Favourites" width="28" height="26"/>
+        <image name="The Endless Summer" width="1425" height="1425"/>
+        <image name="These Things Happen" width="1500" height="1500"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XQC-mW-kpn"/>
+    </inferredMetricsTieBreakers>
+</document>
